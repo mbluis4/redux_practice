@@ -1,11 +1,16 @@
-import Counter from "./components/Counter";
+import AddTodo from "./components/AddTodo";
+import Header from "./components/Header";
+import TodoList from "./components/TodoList";
+import VisibilityFilters from "./components/VisibilityFilters";
 import "./index.css";
 
 function App() {
   return (
     <div className="App">
-      <h2>Counter app</h2>
-      <Counter />
+      <Header />
+      <VisibilityFilters />
+      <AddTodo />
+      <TodoList />
     </div>
   );
 }
