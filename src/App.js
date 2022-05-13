@@ -1,17 +1,18 @@
-import AddTodo from "./components/AddTodo";
-import Header from "./components/Header";
-import TodoList from "./components/TodoList";
-import VisibilityFilters from "./components/VisibilityFilters";
-import "./index.css";
+// components
+import Navbar from "./components/Navbar";
+import CartContainer from "./components/CartContainer";
+// items
+import cartItems from "./cart-items";
+// redux stuff
 
 function App() {
+  // cart setup
+
   return (
-    <div className="App">
-      <Header />
-      <VisibilityFilters />
-      <AddTodo />
-      <TodoList />
-    </div>
+    <main>
+      <Navbar />
+      <CartContainer cart={cartItems} />
+    </main>
   );
 }
 
